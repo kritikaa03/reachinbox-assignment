@@ -12,7 +12,7 @@ const Onebox = () => {
       email: "Beata@gmail.com",
       message: "I've tried a lot and. ",
       status: "Interested",
-      campaign: "indai",
+      campaign: "Campaign name",
       date: "Mar 7",
     },
     {
@@ -20,7 +20,7 @@ const Onebox = () => {
       email: "Sanya@gmail.com",
       message: "I've tried a lot and. ",
       status: "Closed",
-      campaign: "indai",
+      campaign: "Campaign name",
       date: "Mar 7",
     },
     {
@@ -28,7 +28,7 @@ const Onebox = () => {
       email: "william@gmail.com",
       message: "Payment not going through",
       status: "Interested",
-      campaign: "indai",
+      campaign: "Campaign name",
       date: "Mar 7",
     },
     {
@@ -36,7 +36,7 @@ const Onebox = () => {
       email: "johnson@gmail.com",
       message: "Could you tell me more about it",
       status: "Meeting Booked",
-      campaign: "indai",
+      campaign: "Campaign name",
       date: "Mar 7",
     },
     {
@@ -44,7 +44,7 @@ const Onebox = () => {
       email: "orlando@gmail.com",
       message: "Hi, I am interested",
       status: "Meeting Completed",
-      campaign: "indai",
+      campaign: "Campaign name",
       date: "18:30",
     },
     {
@@ -52,7 +52,7 @@ const Onebox = () => {
       email: "kritika@gmail.com",
       message: "Payment incomplete",
       status: "Interested",
-      campaign: "indai",
+      campaign: "Campaign name",
       date: "Mar 7",
     },
     {
@@ -60,7 +60,7 @@ const Onebox = () => {
       email: "john@gmail.com",
       message: "I have done",
       status: "Meeting Completed",
-      campaign: "indai",
+      campaign: "Campaign name",
       date: "Mar 7",
     },
   ];
