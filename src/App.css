@@ -1,47 +1,101 @@
+body {
+  overflow-x: hidden;
+}
+
+/* Centers content and ensures proper box sizing */
 .App {
   text-align: center;
   box-sizing: border-box;
 }
 
+/* Styles for the header */
 .App-header {
   background-color: #000;
   min-height: 100vh;
-
   font-size: calc(10px + 2vmin);
   color: white;
 }
+
+/* Centers main content */
 .main-content {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
+
+/* Styles for the main container */
 .main {
   position: relative;
-
   width: 100%;
   height: calc(100vh - 80px);
 }
+
+/* Styles for buttons */
 .btn {
   background: linear-gradient(to left, #0000ff 9%, #3399ff 100%);
 }
-.index-page-height{
-  height: calc(100vh - 70px);
- 
- 
+
+/* Ensures index page height is calculated correctly */
+.index-page-height {
+  min-height: 100vh; /* Adjust to ensure it takes full viewport height */
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
+
+/* Hides scrollbars */
 .right-side::-webkit-scrollbar {
   display: none;
 }
-
-/* Hide scrollbar for IE, Edge, and Firefox */
 .right-side {
   -ms-overflow-style: none; /* IE and Edge */
   scrollbar-width: none; /* Firefox */
 }
+
+/* Vertical line styling */
 .vertical-line {
   border: none;
-  background-color: #23272C; /* Adjust color as needed */
-  width: 2px; /* Adjust width as needed */
-  height: 30px; /* Adjust height as needed */
+  background-color: #23272c;
+  width: 2px;
+  height: 30px;
+}
+
+/* Styles for selected items */
+.selected {
+  border-left: 1px solid #5c7cfa;
+}
+
+/* Prevent horizontal scrolling */
+.flex-container {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: hidden;
+  width: 100vw;
+}
+
+.flex-item {
+  flex-shrink: 0;
+}
+
+/* Ensure that email thread content is scrollable while keeping other elements fixed */
+.thread-email-container {
+  overflow-y: auto;
+  overflow-x: hidden;
+  height: calc(100vh - 80px); /* Adjust as needed */
+  padding-bottom: 60px; /* Ensure space for the fixed button */
+}
+
+/* Style for the fixed reply button inside the thread box */
+.fixed-reply-button {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  margin: 10px;
+  background: linear-gradient(to left, #0000ff 9%, #3399ff 100%);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
 }
