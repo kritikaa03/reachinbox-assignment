@@ -108,20 +108,6 @@ const ThreadEmail = () => {
         </nav>
 
         <div className="thread-container relative overflow-y-auto h-[calc(100vh-135px)]">
-          <div className="absolute bottom-0 right-0 p-4 z-10">
-            {reply && (
-              <button
-                className="flex items-center justify-start gap-3 text-white pt-2 pb-2 pr-4 pl-4 bg-gradient-to-r from-blue-500 rounded to-blue-800 text-xs"
-                onClick={OpenEditor}
-              >
-                <span>
-                  <SlActionUndo />
-                </span>
-                Reply
-              </button>
-            )}
-          </div>
-
           <div className="pb-20"> {/* Extra padding at the bottom for button visibility */}
             {Tdata.map((el, index) => (
               <div key={index} className="text-[#AEAEAE]">
@@ -164,6 +150,19 @@ const ThreadEmail = () => {
                 </div>
               </div>
             ))}
+            <div className="float-right p-4 z-10">
+              {reply && (
+                <button
+                  className="flex items-center justify-start gap-3 text-white pt-2 pb-2 pr-4 pl-4 bg-gradient-to-r from-blue-500 rounded to-blue-800 text-xs"
+                  onClick={OpenEditor}
+                >
+                  <span>
+                    <SlActionUndo />
+                  </span>
+                  Reply
+                </button>
+              )}
+            </div>
           </div>
 
           {alret && (
