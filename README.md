@@ -1,6 +1,9 @@
 
 # ReachInbox Project
 
+# Deployment link- https://reachinbox-assignment-ten-mu.vercel.app/   
+(the link in google form is not correct)
+
 Welcome to the ReachInbox project! This repository contains a web application designed for managing and interacting with email threads. The application features a variety of functionalities including user authentication, a customizable text editor, and a responsive interface. 
 
 ## Project Overview
